@@ -1,0 +1,12 @@
+Package: codec
+Type: Package
+Title: Convert Integers to Strings and Vice Versa
+Version: 0.1
+Author: David Holstius
+Maintainer: David Holstius <dholstius@baaqmd.gov>
+Description: Useful for small vocabularies of short strings
+License: BSD
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
+Suggests: testthat
