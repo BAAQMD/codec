@@ -1,10 +1,10 @@
 #' @title Convert strings to integers and vice versa
 #' @name codec
 #'
-#' @param x integer or character
-#' @param codec named integer vector
-#' @param \dots further arguments to \code{\link[base]{match}}
-#' @param warn (optional) issue warning if \code{x} is non-numeric
+#' @param x integer or character vector
+#' @param codec named integer vector, used for encoding or decoding
+#' @param \dots further arguments (passed to `match`)
+#' @param warn (optional) issue warning if `x` is non-numeric
 #'
 #' @rdname codec
 #'
