@@ -1,18 +1,20 @@
-#' @describeIn codec Convert integers to strings
+#' Convert short codes to longer strings
+#'
+#' @describeIn codec Convert short codes to longer strings
 #' @export
-decode <- function (x, codec, ..., warn = TRUE) {
+decode <- function (x, codec, ...) {
+  UseMethod("decode")
+}
 
-  s <- names(codec)
-  stopifnot(length(s) == length(codec))
+#' @S3method decode default
+decode.default <- function (x, codec, ...) {
 
-  if (isTRUE(warn)) {
-    if(!is.numeric(x)) {
-      warning("Decoding non-numeric vector")
-    }
-  }
+  strings <- names(codec)
+  stopifnot(length(strings) == length(codec))
 
   i <- match(x, codec, ...)
-  res <- s[i]
-  return(res)
+  decoded <- strings[i]
+
+  return(decoded)
 
 }

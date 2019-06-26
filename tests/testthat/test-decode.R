@@ -13,7 +13,3 @@ test_that("integer vector", {
 test_that("integers not in codec yield NA", {
   expect_equal(decode(30, ALPHABET), NA_character_)
 })
-
-test_that("non-numeric x yields warning", {
-  expect_warning(decode("fhgwgads", ALPHABET))
-})

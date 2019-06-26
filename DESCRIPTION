@@ -1,7 +1,7 @@
 Package: codec
 Type: Package
 Title: Convert Integers to Strings and Vice Versa
-Version: 0.1
+Version: 2019.06.25
 Author: David Holstius
 Maintainer: David Holstius <dholstius@baaqmd.gov>
 Description: Useful for small vocabularies of short strings
@@ -9,5 +9,5 @@ License: BSD
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 5.0.1.9000
+RoxygenNote: 6.1.0
 Suggests: testthat

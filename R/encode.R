@@ -1,9 +1,13 @@
-#' @describeIn codec Convert strings to integers
+#' Convert long strings to short codes
+#'
+#' @describeIn codec Convert long strings to short codes
 #' @export
-encode <- function (x, codec, ..., warn = TRUE) {
+encode <- function (x, codec, ..., warn = FALSE) {
+  UseMethod("encode")
+}
 
-  s <- names(codec)
-  stopifnot(length(s) == length(codec))
+#' @S3method encode default
+encode.default <- function (x, codec, ..., warn = FALSE) {
 
   if (isTRUE(warn)) {
     if(!is.character(x)) {
@@ -11,8 +15,12 @@ encode <- function (x, codec, ..., warn = TRUE) {
     }
   }
 
-  i <- match(x, s, ...)
-  res <- codec[i]
-  return(unname(res))
+  codes <- names(codec)
+  stopifnot(length(codes) == length(codec))
+
+  i <- match(x, codes, ...)
+  encoded <- unname(codec[i])
+
+  return(encoded)
 
 }

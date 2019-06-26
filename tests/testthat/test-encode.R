@@ -15,5 +15,5 @@ test_that("strings not in codec yield NA", {
 })
 
 test_that("non-character x yields warning", {
-  expect_warning(encode(123456789, ALPHABET))
+  expect_warning(encode(123456789, ALPHABET, warn = TRUE))
 })
