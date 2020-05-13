@@ -11,7 +11,7 @@
 #' @examples
 #' ALPHABET <- setNames(1:26, LETTERS)
 #'
-#' x <- c(6, 15, 15)
+#' x <- as.integer(c(6, 15, 15))
 #' decode(x, ALPHABET)
 #'
 #' foo <- c("F", "O", "O")
