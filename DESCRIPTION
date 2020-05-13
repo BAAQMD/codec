@@ -1,13 +1,15 @@
 Package: codec
 Type: Package
 Title: Convert Integers to Strings and Vice Versa
-Version: 2019.06.25
+Version: 2020.05.13
 Author: David Holstius
 Maintainer: David Holstius <dholstius@baaqmd.gov>
-Description: Useful for small vocabularies of short strings
-License: BSD
+Description: Useful for small vocabularies of short strings.
+License: CC0
 Encoding: UTF-8
+Imports:
+  methods
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.0
 Suggests: testthat
