@@ -6,7 +6,7 @@ encode <- function (x, codec, ..., warn = FALSE) {
   UseMethod("encode")
 }
 
-#' @S3method encode default
+#' @export
 encode.default <- function (x, codec, ..., warn = FALSE) {
 
   if (isTRUE(warn)) {

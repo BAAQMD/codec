@@ -6,7 +6,7 @@ decode <- function (x, codec, ...) {
   UseMethod("decode")
 }
 
-#' @S3method decode default
+#' @export
 decode.default <- function (x, codec, ...) {
 
   strings <- names(codec)
