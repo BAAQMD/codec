@@ -9,7 +9,8 @@
 #' @rdname codec
 #'
 #' @examples
-#' ALPHABET <- setNames(1:26, LETTERS)
+#' library(codec)
+#' ALPHABET <- setNames(as.integer(1:26), LETTERS)
 #'
 #' x <- as.integer(c(6, 15, 15))
 #' decode(x, ALPHABET)
